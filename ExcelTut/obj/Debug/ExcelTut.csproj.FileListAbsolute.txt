@@ -1,0 +1,8 @@
+C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\bin\Debug\ExcelTut.exe.config
+C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\bin\Debug\ExcelTut.exe
+C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\bin\Debug\ExcelTut.pdb
+C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\obj\Debug\ExcelTut.csprojAssemblyReference.cache
+C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\obj\Debug\ExcelTut.csproj.ResolveComReference.cache
+C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\obj\Debug\ExcelTut.csproj.CoreCompileInputs.cache
+C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\obj\Debug\ExcelTut.exe
+C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\obj\Debug\ExcelTut.pdb
