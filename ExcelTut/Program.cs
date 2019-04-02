@@ -12,9 +12,9 @@ namespace ExcelTut
       {
 
          // open new workbook
-         var book = new ExcelReader(@"C:\Users\WickerB\Desktop\test.xlsx", 1);
+         var book = new ExcelReader(@"C:\Users\WickerB\Downloads\States and counties that require Mine Subsidence coverage.xlsx", 1);
 
-         string[,] data = book.ReadRange(1, 1, 17, 2);
+         book.CreateRulesJson();
 
          book.Close();
       }

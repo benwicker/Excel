@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using ExcelTut.Entities;
 using Microsoft.Office.Interop.Excel;
+using Newtonsoft.Json;
 using _Excel = Microsoft.Office.Interop.Excel;
 
 namespace ExcelTut
@@ -20,6 +23,28 @@ namespace ExcelTut
          this.path = path;
          wb = excel.Workbooks.Open(path);
          ws = wb.Worksheets[sheet];
+      }
+
+      public void WriteCell(int i, int j, string data)
+      {
+         i++;
+         j++;
+         ws.Cells[i, j].Value2 = data;
+      }
+
+      public void Save()
+      {
+         wb.Save();
+      }
+
+      public void SaveAs(string path)
+      {
+         wb.SaveAs(path);
+      }
+
+      public void Close()
+      {
+         wb.Close();
       }
 
       public string ReadCell(int i, int j)
@@ -52,27 +77,66 @@ namespace ExcelTut
          return returnstring;
       }
 
-      public void WriteCell(int i, int j, string data)
+      public void CreateRulesJson()
       {
-         i++;
-         j++;
-         ws.Cells[i, j].Value2 = data;
-      }
+         // hardcoding
+         var x1 = 1;
+         var x2 = 138;
+         var y1 = 1;
+         var y2 = 2;
 
-      public void Save()
-      {
-         wb.Save();
-      }
+         // pull data from excel
+         Range range = (Range) ws.Range[ws.Cells[x1, y1], ws.Cells[x2, y2]];
+         object[,] holder = range.Value2;
+         List<MineSubsidenceEntry> data = new List<MineSubsidenceEntry>();
 
-      public void SaveAs(string path)
-      {
-         wb.SaveAs(path);
-      }
+         for (int i = 2; i <= x2 - x1; i++)
+         {
+            data.Add(new MineSubsidenceEntry()
+            {
+               State = holder[i, 1].ToString(),
+               County = holder[i, 2].ToString()
+            });
+         }
 
-      public void Close()
-      {
-         wb.Close();
-      }
+         // build rules
+         var e = Event.GetDefaultEvent();
 
+         var IL = new Rule("Illinois", "Mine Subsidence", "IL", e);
+         var IN = new Rule("Indiana", "Mine Subsidence", "IN", e);
+         var KY = new Rule("Kentucky", "Mine Subsidence", "KY", e);
+         var WV = new Rule("West Virginia", "Mine Subsidence", "WV", e);
+
+         foreach (var entry in data)
+         {
+            switch (entry.State)
+            {
+               case "IL":
+                  IL.Conditions.Any.Conditions.Add(new Condition("county", entry.County));
+                  break;
+               case "IN":
+                  IN.Conditions.Any.Conditions.Add(new Condition("county", entry.County));
+                  break;
+               case "KY":
+                  KY.Conditions.Any.Conditions.Add(new Condition("county", entry.County));
+                  break;
+               case "WV":
+                  WV.Conditions.Any.Conditions.Add(new Condition("county", entry.County));
+                  break;
+            }
+         }
+
+         var rules = new List<Rule>()
+         {
+            IL,
+            IN,
+            KY,
+            WV
+         };
+
+         // write to file
+         var json = JsonConvert.SerializeObject(rules);
+         System.IO.File.WriteAllText(@"C:\Users\WickerB\Desktop\Test\ExcelTut\ExcelTut\Assets\mineSubsidenceRules.json", json);
+      }
    }
 }

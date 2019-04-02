@@ -1,0 +1,814 @@
+[
+   {
+      "name": "Illinois",
+      "domain": "Mine Subsidence",
+      "conditions": {
+         "Conditions": [
+            {
+               "fact": "state",
+               "operator": "equal",
+               "value": "IL"
+            }
+         ],
+         "Any": {
+            "Conditions": [
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Bond"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Bureau"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Christian"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Clinton"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Douglas"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Franklin"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Fulton"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Gallatin"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Grundy"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Jackson"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Jefferson"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Knox"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "La Salle"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Logan"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Macoupin"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Madison"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Marion"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Marshall"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "McDonough"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Menard"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Mercer"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Montgomery"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Peoria"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Perry"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Putnam"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Randolph"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Rock Island"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Saint Clair"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Saline"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Sangamon"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Tazewell"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Vermilion"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Washington"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Williamson"
+               }
+            ]
+         }
+      },
+      "event": {
+         "type": "addField",
+         "params": {
+            "field": [
+               {
+                  "id": "MineSubsidenceLimit",
+                  "label": "Mine Subsidence Limit",
+                  "model": {
+                     "name": "mineSubsidenceLimit",
+                     "value": "Default Value"
+                  },
+                  "validation": "required"
+               }
+            ]
+         }
+      }
+   },
+   {
+      "name": "Indiana",
+      "domain": "Mine Subsidence",
+      "conditions": {
+         "Conditions": [
+            {
+               "fact": "state",
+               "operator": "equal",
+               "value": "IN"
+            }
+         ],
+         "Any": {
+            "Conditions": [
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Clay"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Crawford"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Daviess"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Dubois"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Fountain"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Gibson"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Greene"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Knox"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Lawrence"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Martin"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Monroe"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Orange"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Owen"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Parke"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Perry"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Pike"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Posey"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Putnam"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Spencer"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Sullivan"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Switzerland"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Vanderburgh"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Vermillion"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Vigo"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Warren"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Warrick"
+               }
+            ]
+         }
+      },
+      "event": {
+         "type": "addField",
+         "params": {
+            "field": [
+               {
+                  "id": "MineSubsidenceLimit",
+                  "label": "Mine Subsidence Limit",
+                  "model": {
+                     "name": "mineSubsidenceLimit",
+                     "value": "Default Value"
+                  },
+                  "validation": "required"
+               }
+            ]
+         }
+      }
+   },
+   {
+      "name": "Kentucky",
+      "domain": "Mine Subsidence",
+      "conditions": {
+         "Conditions": [
+            {
+               "fact": "state",
+               "operator": "equal",
+               "value": "KY"
+            }
+         ],
+         "Any": {
+            "Conditions": [
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Bell"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Boyd"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Breathitt"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Butler"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Carter"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Christian"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Clay"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Daviess"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Edmonson"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Elliott"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Floyd"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Greenup"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Hancock"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Harlan"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Henderson"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Hopkins"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Jackson"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Johnson"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Knott"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Knox"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Laurel"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Lawrence"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Lee"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Leslie"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Letcher"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Martin"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "McCreary"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "McLean"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Morgan"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Muhlenberg"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Ohio"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Owsley"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Perry"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Union"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Webster"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Whitley"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Wolfe"
+               }
+            ]
+         }
+      },
+      "event": {
+         "type": "addField",
+         "params": {
+            "field": [
+               {
+                  "id": "MineSubsidenceLimit",
+                  "label": "Mine Subsidence Limit",
+                  "model": {
+                     "name": "mineSubsidenceLimit",
+                     "value": "Default Value"
+                  },
+                  "validation": "required"
+               }
+            ]
+         }
+      }
+   },
+   {
+      "name": "West Virginia",
+      "domain": "Mine Subsidence",
+      "conditions": {
+         "Conditions": [
+            {
+               "fact": "state",
+               "operator": "equal",
+               "value": "WV"
+            }
+         ],
+         "Any": {
+            "Conditions": [
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Barbour"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Boone"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Braxton"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Brooke"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Clay"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Doddridge"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Fayette"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Gilmer"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Grant"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Greenbrier"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Hancock"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Harrison"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Kanawha"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Lewis"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Lincoln"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Logan"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Marion"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Marshall"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Mason"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "McDowell"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Mercer"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Mineral"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Mingo"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Monongalia"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Nicholas"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Ohio"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Pocahontas"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Preston"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Putnam"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Raleigh"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Randolph"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Summers"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Taylor"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Tucker"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Tyler"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Upshur"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Wayne"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Webster"
+               },
+               {
+                  "fact": "county",
+                  "operator": "equal",
+                  "value": "Wetzel"
+               }
+            ]
+         }
+      },
+      "event": {
+         "type": "addField",
+         "params": {
+            "field": [
+               {
+                  "id": "MineSubsidenceLimit",
+                  "label": "Mine Subsidence Limit",
+                  "model": {
+                     "name": "mineSubsidenceLimit",
+                     "value": "Default Value"
+                  },
+                  "validation": "required"
+               }
+            ]
+         }
+      }
+   }
+]
