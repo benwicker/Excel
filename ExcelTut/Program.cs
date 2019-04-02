@@ -14,13 +14,8 @@ namespace ExcelTut
          // open new workbook
          var book = new ExcelReader(@"C:\Users\WickerB\Desktop\test.xlsx", 1);
 
-         var data = book.ReadCell(0, 0);
-         Console.WriteLine(data);
-         book.WriteCell(0, 0, "newHeader");
-         Console.WriteLine(book.ReadCell(0, 0));
+         string[,] data = book.ReadRange(1, 1, 17, 2);
 
-         // save and close
-         book.Save();
          book.Close();
       }
    }

@@ -36,6 +36,22 @@ namespace ExcelTut
          }
       }
 
+      public string[,] ReadRange(int startX, int startY, int endX, int endY)
+      {
+         Range range = (Range)ws.Range[ws.Cells[startX, startY], ws.Cells[endX, endY]];
+         object[,] holder = range.Value2;
+         string[,] returnstring = new string[endX - startX, endY - startY];
+         for (int i = 1; i <= endX - startX; i++)
+         {
+            for (int j = 1; j <= endY - startY; j++)
+            {
+               returnstring[i - 1, j - 1] = holder[i, j].ToString();
+            }
+         }
+
+         return returnstring;
+      }
+
       public void WriteCell(int i, int j, string data)
       {
          i++;
